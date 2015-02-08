@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 af52e5611e5ba4d7c14f394ba61c5c959382de81 Vin <vinnpc@gmail.com> 1422851174 +0800	clone: from https://github.com/vinnpc/hexo-theme-next.git
+af52e5611e5ba4d7c14f394ba61c5c959382de81 14242e4ce07948c582a51f7b9b54f2c4fc70f01c Vin <vinnpc@gmail.com> 1422851775 +0800	commit: change static file setting to support subdirectory
+14242e4ce07948c582a51f7b9b54f2c4fc70f01c 13da7d5e36b0c3d4fcfff4ee76903005d87d59d2 Vin <vinnpc@gmail.com> 1423015229 +0800	merge upstream/master: Fast-forward
+13da7d5e36b0c3d4fcfff4ee76903005d87d59d2 615517bdf6d76c2d572901599e79c494aa91d47b Vin <vinnpc@gmail.com> 1423364933 +0800	merge upstream/master: Fast-forward

@@ -1,0 +1,241 @@
+.posts-expand {
+  padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .posts-expand {
+    margin: 0 20px;
+  }
+
+  .post-body {
+    pre, .highlight {
+      margin 0 -20px
+      padding 10px 20px
+      .gutter pre {
+        padding-right 10px
+      }
+    }
+  }
+}
+
+.posts-expand .post-title {
+  font-size: 26px;
+  text-align: center;
+
+  +mobile() {
+    font-size: 22px;
+  }
+}
+.posts-expand .post-title-link {
+  position: relative;
+  color: $colorLightBlack;
+  border-bottom: none;
+  line-height: 1.2;
+  vertical-align: top;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    the-transition();
+  }
+
+  &:hover::before {
+    visibility: visible
+    transform: scaleX(1);
+  }
+}
+
+.posts-expand .post-meta {
+  margin: 3px 0 60px 0;
+  color: $colorDarkGray;
+  font-size: 12px;
+  text-align: center;
+
+  .post-category-list {
+    display inline-block
+    margin 0
+    padding 3px
+  }
+  .post-category-list-link {
+    color: $colorDarkGray;
+  }
+
+  .post-comments-count a{
+    border-bottom: none;
+    color: $colorDarkGray;
+  }
+}
+
+.posts-expand .post-body {
+  h2, h3, h4, h5, h6 {
+    margin: 30px 0 15px;
+  }
+
+  ul {
+    list-style: square;
+  }
+
+  hr {
+    height: 1px;
+    border: none;
+    background: $colorDimGray;
+  }
+
+  blockquote {
+    position: relative;
+    margin: 40px 0;
+    color: $colorDimGray;
+    text-align: center;
+
+    &::before, &::after {
+      position: absolute;
+      content: ' ';
+      display: block;
+      width: 100%;
+      height: 24px;
+      opacity: 0.2;
+
+    }
+    &::before {
+      top: -20px;
+      border-top: 1px solid $colorLightGray;
+      background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDM0aDZsNC04di0xMmgtMTJ2MTJoNnptMTYgMGg2bDQtOHYtMTJoLTEydjEyaDZ6Ii8+PHBhdGggZD0iTTAgMGg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PC9zdmc+") no-repeat 0 -7px;
+      background-size: 24px 24px;
+    }
+    &::after {
+      bottom: -20px;
+      border-bottom: 1px solid $colorLightGray;
+      background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDM0aDZsNC04di0xMmgtMTJ2MTJoNnptMTYgMGg2bDQtOHYtMTJoLTEydjEyaDZ6Ii8+PHBhdGggZD0iTTAgMGg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PC9zdmc+") no-repeat 100% 7px;
+      background-size: 24px 24px;
+    }
+    & cite::before {
+      content "-"
+      padding 0 5px
+    }
+    p, div {
+      text-align: center
+    }
+  }
+
+  table {
+    width 100%
+    border-collapse collapse
+    border-spacing 0
+  }
+
+  caption, th, td {
+    text-align left
+    vertical-align middle
+    font-weight normal
+  }
+  th {
+    font-weight 700
+    border-bottom 3px solid $colorLighterGray
+    padding-bottom 10px
+  }
+  td {
+    border-bottom 1px solid $colorLighterGray
+    padding 10px 0
+  }
+  dt {
+    font-weight 700
+  }
+  dd {
+    margin 0
+    padding 0
+  }
+  img {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 3px;
+    border: 1px solid $colorLighterGray;
+  }
+
+  .full-image {
+    max-width: none;
+    width: 126%;
+    height: auto;
+    margin: 0 -13%;
+
+    +mobile() {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+  .pullquote {
+    width 45%
+    &.left {
+      float left
+      margin-left 5px
+      margin-right 10px
+    }
+    &.right {
+      float right
+      margin-left 10px
+      margin-right 5px
+    }
+  }
+  .highlight table, .gist table {
+    width auto
+    td {
+      border none
+    }
+
+  }
+  .highlight, .gist {
+    a {
+      color $highlightLinkColor !important
+      text-decoration none !important
+    }
+  }
+
+  .video-container {
+    position relative
+    padding-top 60%
+    height 0
+    overflow hidden
+    iframe, object, embed {
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+    }
+  }
+}
+
+.posts-expand .post-tags {
+  margin-top: 60px;
+  text-align: center;
+
+  a {
+    display inline-block
+    margin-right 10px
+    font-size: 13px
+  }
+}
+
+.posts-expand {
+  the-shape(6px, $colorLightGray, -13px, 5px, #fff);
+  .post-eof {
+    display: block;
+    margin 160px auto 120px
+    width 8%
+    height 1px
+    background $colorLightGray
+    text-align center
+  }
+}
+
+.post-more-link {
+  margin-top: 50px;
+}
+

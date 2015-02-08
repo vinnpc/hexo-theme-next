@@ -1,0 +1,41 @@
+menu:
+  home: Home
+  archives: Archives
+  tags: Tags
+  about: About
+
+post:
+  posted: Posted on
+  read_more: Read more
+  untitled: Untitled
+
+page:
+  totally: Totally
+  tags: tags
+
+footer:
+  powered: "Powered by %s"
+  theme: Theme
+  feed: Feed
+
+counter:
+  tag_cloud:
+    zero: No tags.
+    one: 1 tag in total.
+    other: "%d tags in total."
+
+  archive_posts:
+    zero: No posts.
+    one: 1 post.
+    other: "%d posts in total."
+
+cheers:
+  um: Um..
+  ok: OK
+  nice: Nice
+  good: Good
+  great: Great
+  excellent: Excellent
+
+keep_on: Keep on posting.
+
